@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>Portafolio.la</title>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="../static/css/normalize.css">
-		<link rel="stylesheet" href="../static/css/estilos.css">
+		<title>Portafolio GQG</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../static/css/normalize.css" />
+		<link rel="stylesheet" href="../static/css/estilos.css" />
 	</head>
 	<body>
 		<header id="yo" class="Header">
-			<nav>
-				<li>
-					<a href="#Yo"></a>
-				</li>
-				<li>
-					<a href="#Perfil"></a>
-				</li>
-				<li>
-					<a href="#Trabajo"></a>
-				</li>
-				<li>
-					<a href="#Contacto"></a>
-				</li>
+			<nav class="MainMenu">
+				<ul class="MainMenu-list">
+					<li class="MainMenu-item">
+						<a class="MainMenu-link" href="#yo">Yo</a>
+					</li>
+					<li class="MainMenu-item">
+						<a class="MainMenu-link" href="#perfil">Perfil</a>
+					</li>
+					<li class="MainMenu-item">
+						<a class="MainMenu-link" href="#trabajo">Trabajo</a>
+					</li>
+					<li class="MainMenu-item">
+						<a class="MainMenu-link" href="#contacto">Contacto</a>
+					</li>
+				</ul>		
 			</nav>
-			<figure>
-				<img src="avatar.jpg" alt="Esta es una imagen personal" />
-				<figcaption>
-					<a href="http://twitter.com/GiancarloGQ" target="_blank">@GiancarloQG</a>
+			<figure class="Header-imageContainer">
+				<img src="avatar.jpg" alt="Imagen Personal" class="Header-image"/>
+				<figcaption class="Header-imageDescription">
+					<a class="Heder-link" href="http://twitter.com/GiancarloQG" target="_black">@Giancarlo Quispe</a>
+					<p class="Header-name">Giancarlo Quispe</p>
 				</figcaption>
-				<p>Giancarlo Quispe Gavino</p>
 			</figure>
 		</header>
 		<section id="perfil" class="Profile">
-			<h2 class="Profile-title">Mi perfil</h2>
-			<p class="Profile-description">
-				Hola! Si llegaste hasta aquí Contáctame
-			</p>			
-			<a class="Profile-link" href="http://twitter.com/GiancarloGQ" target="_blank">GiancarloQG</a>
-			<a class="Profile-link" href="http://facebook.com/giancarlo1207" target="_blank">Giancarlo Quispe</a>
-			<a class="Profile-link" href="http://github.com/GiancarloGQ" target="_blank">GiancarloQG</a>
+			<h2 class="Profile-title u-title">Mi Perfil</h2>
+			<p class="Profile-description">Hola! Si llegaste hasta aquí puedes ver mi portafolio y contactarme</p>
+			<a class="Profile-link" href="http://twitter.com/GiancarloQG" target="blank_">@GiancarloQG</a>
+			<a class="Profile-link" href="http://facebook.com/giancarlo1207" target="blank_">Giancarlo Quispe</a>
+			<a class="Profile-link" href="http://github.com/GiancarloQG" target="blank_">Giancarlo Quispe</a>
 		</section>
-		<section>
-			<h2>Mi trabajo</h3>
-			<article>
-				<figure>
-					<img src="mejorandola.jpg" alt="Es la descripcion de mi imagen" />
-					<figcaption>Website de mejorando.la</figcaption>
+		<section id="trabajo" class="Work">
+			<h2 class="Work-title u-title">Mi trabajo</h2>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="mejorandola.jpg" alt="Es la descripción de mi Imagen" />
+					<figcaption class="work-description">Website de mejorando.la</figcaption>
 				</figure>
 			</article>
-			<article>
-				<figure>
-					<img src="mejorandola.jpg" alt="Es la descripcion de mi imagen" />
-					<figcaption>Website de mejorando.la</figcaption>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="mejorandola.jpg" alt="Es la descripción de mi Imagen" />
+					<figcaption class="work-description">Website de mejorando.la</figcaption>
 				</figure>
 			</article>
-			<article>
-				<figure>
-					<img src="mejorandola.jpg" alt="Es la descripcion de mi imagen" />
-					<figcaption>Website de mejorando.la</figcaption>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="mejorandola.jpg" alt="Es la descripción de mi Imagen" />
+					<figcaption class="work-description">Website de mejorando.la</figcaption>
+				</figure>
+			</article>
+			<article class="Work-item">
+				<figure class="Work-imageContainer">
+					<img class="Work-image" src="mejorandola.jpg" alt="Es la descripción de mi Imagen" />
+					<figcaption class="work-description">Website de mejorando.la</figcaption>
 				</figure>
 			</article>
 		</section>
-		<footer>
-			<h3>Contacto</h3>
-			<p>Si tienes una sugerencia o quieres trabajar conmigo, ponte en contacto con este formulario:</p>
-			<form>
-				<input type="text" placeholder="Nombre" />
-				<input type="email" placeholder="Email" />
-				<textarea placeholder="Motivo"></textarea>
-				<button type="submit"> Contactarme </button>
-			</form>	
-		</footer>
-	</body>
+		<footer id="contacto" class="Footer">
+			<h3 class="Footer-title">Contacto</h3>
+			<p class="Footer-description">Si tienes una sugerencia o quieres trabajar conmigo ponte en contacto con este formulario</p>
+			<form class="Footer-form">
+				<input class="footer-formInput" type="text" placeholder="Nombre"/>
+				<input class="footer-formInput" type="email" placeholder="Email"/>
+				<textarea class="footer-textarea" placeholder="Motivo"></textarea>
+				<button class="footer-button" type="submit">Contáctame</button>
+			</form>
+		</footer>	
+	</body>	
 </html>
